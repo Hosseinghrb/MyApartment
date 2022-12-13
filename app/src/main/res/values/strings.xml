@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">myhouse</string>
+    <string-array name="Feild">
+        <item>برق کار</item>
+        <item> لوله کش</item>
+        <item> بنا</item>
+    </string-array>
+</resources>

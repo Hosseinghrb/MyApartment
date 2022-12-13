@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbulding"
+    tools:context=".RegisterActivity">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/EmailInputRegisterActivity"
+        android:layout_width="275dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="#7E8ECCC6"
+        android:hint=" Email"
+        android:textColorHint="#070707"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMainLoginActivity"
+        app:layout_constraintEnd_toEndOf="@+id/PasswordInputRegisterActivity"
+        app:layout_constraintStart_toStartOf="@+id/PasswordInputRegisterActivity"
+        app:layout_constraintTop_toBottomOf="@+id/UsernameInputRegisterActivity"
+        app:layout_constraintVertical_bias="0.847" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/UsernameInputRegisterActivity"
+        android:layout_width="275dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="64dp"
+        android:background="#7E8ECCC6"
+        android:hint=" Username"
+        android:textColorHint="#070707"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMainLoginActivity"
+        app:layout_constraintEnd_toEndOf="@+id/EmailInputRegisterActivity"
+        app:layout_constraintStart_toStartOf="@+id/EmailInputRegisterActivity"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.847" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/RPasswordInputRegisterActivity"
+        android:layout_width="275dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="#7E8ECCC6"
+        android:hint=" Repeat password"
+        android:textColorHint="#070707"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMainLoginActivity"
+        app:layout_constraintEnd_toEndOf="@+id/buttonMainRegisterActivity"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/buttonMainRegisterActivity"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordInputRegisterActivity"
+        app:layout_constraintVertical_bias="0.847" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/PasswordInputRegisterActivity"
+        android:layout_width="275dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="#7E8ECCC6"
+        android:hint=" Password"
+        android:textColorHint="#070707"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMainLoginActivity"
+        app:layout_constraintEnd_toEndOf="@+id/RPasswordInputRegisterActivity"
+        app:layout_constraintStart_toStartOf="@+id/RPasswordInputRegisterActivity"
+        app:layout_constraintTop_toBottomOf="@+id/EmailInputRegisterActivity"
+        app:layout_constraintVertical_bias="0.847" />
+
+    <Button
+        android:id="@+id/buttonMainRegisterActivity"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#FF018786"
+        android:fontFamily="sans-serif-black"
+        android:text="Register"
+        android:textColor="#BBDEFB"
+        android:textSize="18sp"
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
