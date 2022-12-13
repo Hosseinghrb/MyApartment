@@ -13,9 +13,9 @@ class RegisterActivity : AppCompatActivity() {
         binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.buttonMainRegisterActivity.setOnClickListener {
+        binding.buttonMainRegisterUserActivity.setOnClickListener {
             if (binding.UsernameInputRegisterActivity.text.toString().isEmpty()or
-                binding.EmailInputRegisterActivity.text.toString().isEmpty() or
+                binding.PhoneInputRegisterActivity.text.toString().isEmpty() or
                 binding.PasswordInputRegisterActivity.text.toString().isEmpty() or
                 binding.RPasswordInputRegisterActivity.text.toString().isEmpty()){
                 Toast.makeText(this,"Fill in all the details",Toast.LENGTH_SHORT).show()

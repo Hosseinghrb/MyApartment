@@ -8,64 +8,59 @@
     tools:context=".RegisterActivity">
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/EmailInputRegisterActivity"
+        android:id="@+id/PhoneInputRegisterActivity"
         android:layout_width="275dp"
         android:layout_height="48dp"
-        android:layout_marginTop="16dp"
         android:background="#7E8ECCC6"
-        android:hint=" Email"
+        android:hint=" Phone Number"
         android:textColorHint="#070707"
-        app:layout_constraintBottom_toTopOf="@+id/buttonMainLoginActivity"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/PasswordInputRegisterActivity"
         app:layout_constraintStart_toStartOf="@+id/PasswordInputRegisterActivity"
-        app:layout_constraintTop_toBottomOf="@+id/UsernameInputRegisterActivity"
-        app:layout_constraintVertical_bias="0.847" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/UsernameInputRegisterActivity"
-        android:layout_width="275dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="64dp"
-        android:background="#7E8ECCC6"
-        android:hint=" Username"
-        android:textColorHint="#070707"
-        app:layout_constraintBottom_toTopOf="@+id/buttonMainLoginActivity"
-        app:layout_constraintEnd_toEndOf="@+id/EmailInputRegisterActivity"
-        app:layout_constraintStart_toStartOf="@+id/EmailInputRegisterActivity"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.847" />
+        app:layout_constraintVertical_bias="0.246" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/RPasswordInputRegisterActivity"
         android:layout_width="275dp"
         android:layout_height="48dp"
-        android:layout_marginTop="16dp"
         android:background="#7E8ECCC6"
         android:hint=" Repeat password"
         android:textColorHint="#070707"
-        app:layout_constraintBottom_toTopOf="@+id/buttonMainLoginActivity"
-        app:layout_constraintEnd_toEndOf="@+id/buttonMainRegisterActivity"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="@+id/buttonMainRegisterActivity"
-        app:layout_constraintTop_toBottomOf="@+id/PasswordInputRegisterActivity"
-        app:layout_constraintVertical_bias="0.847" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.468" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/UsernameInputRegisterActivity"
+        android:layout_width="275dp"
+        android:layout_height="48dp"
+        android:background="#7E8ECCC6"
+        android:hint=" Username"
+        android:textColorHint="#070707"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/PhoneInputRegisterActivity"
+        app:layout_constraintStart_toStartOf="@+id/PhoneInputRegisterActivity"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.134" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/PasswordInputRegisterActivity"
         android:layout_width="275dp"
         android:layout_height="48dp"
-        android:layout_marginTop="16dp"
         android:background="#7E8ECCC6"
         android:hint=" Password"
         android:textColorHint="#070707"
-        app:layout_constraintBottom_toTopOf="@+id/buttonMainLoginActivity"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/RPasswordInputRegisterActivity"
         app:layout_constraintStart_toStartOf="@+id/RPasswordInputRegisterActivity"
-        app:layout_constraintTop_toBottomOf="@+id/EmailInputRegisterActivity"
-        app:layout_constraintVertical_bias="0.847" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.367" />
 
     <Button
-        android:id="@+id/buttonMainRegisterActivity"
+        android:id="@+id/buttonMainRegisterUserActivity"
         android:layout_width="350dp"
         android:layout_height="60dp"
         android:backgroundTint="#FF018786"
@@ -76,7 +71,22 @@
         app:cornerRadius="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.627"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.659" />
+
+    <CheckBox
+        android:id="@+id/ManagerBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manager"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMainRegisterUserActivity"
+        app:layout_constraintEnd_toEndOf="@+id/buttonMainRegisterUserActivity"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="@+id/buttonMainRegisterUserActivity"
+        app:layout_constraintTop_toBottomOf="@+id/RPasswordInputRegisterActivity"
+        app:layout_constraintVertical_bias="0.613" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
